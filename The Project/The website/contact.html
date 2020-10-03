@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<script src="Assets/Scripts/site.js"></script>
+	<link rel="stylesheet" type="text/css" href="Assets/CSS/site.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Contact</title>
+	
+</head>
+<body>
+	<div id="main">
+		<div id="header">
+			<div></div>
+			<nav>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="locations.html">Cities</a></li>
+					<li><a href="factions.html">Factions</a></li>
+					<li><a href="weapons.html">Weapons</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</nav>
+		</div>
+		<div class="mainContent">
+			<br><h1>Contact Us</h1>
+			<form action="server-script-url" name="contact" onsubmit="return( validate());">
+
+				<label>Your name<span class="asterisk">*</span>  </label><input class="generalInput" type="text" name="username" required><br><br>
+				<label>Your email<span class="asterisk">*</span> </label><input id="email" class="generalInput" type="email" name="email" required><br><br>
+
+				<label>Did you liked my website? </label><select class="generalInput">
+					<option value="yes">Yes</option>
+					<option value="yes">Sure I did</option>
+					<option value="yes">Indeed a great website</option>
+				</select><br><br>
+
+				<label>Your gender</label><br>
+				<input class="clickInput" type="radio" name="gender" value="male" checked> <span>Male</span><br>
+				<input class="clickInput" type="radio" name="gender" value="female"> <span>Female</span><br>
+				<input class="clickInput" type="radio" name="gender" value="other"> <span>Other</span><br><br>
+
+				<label>How did you heard about this website?</label><br>
+				<input class="clickInput" type="checkbox" name="played" value="friend"><span>From a friend</span><br>
+				<input class="clickInput" type="checkbox" name="played" value="google"><span>Google</span><br>
+				<input class="clickInput" type="checkbox" name="played" value="teacher"><span>I need to mark this abomination</span><br><br>
+
+				<textarea id="textBox" name="textbox" placeholder="Tell us what you think..."></textarea><br>
+
+				<button id="submitButton" type="submit" value="Submit"></button>
+
+			</form>
+			
+		</div>
+		<span id="spanOne">Sources used to create this website:</span>
+		<ol>
+			<li><a href="https://ageofdecadence.gamepedia.com/The_Age_of_Decadence_Wiki">The Age of Decadence Wiki</a></li>
+			<li><a href="http://irontowerstudio.com/age-of-decadence-news">Irontowerstudio.com</a></li>
+			<li><a href="https://steamcommunity.com/app/230070">Steam Forum</a></li>
+		</ol>
+		<footer>
+			<div id="spacer"></div>
+			<div id="footer">
+				Website made by: Jakub Zareba, December 2018
+			</div>
+		</footer>
+	</div>
+</body>
+
+</html>
